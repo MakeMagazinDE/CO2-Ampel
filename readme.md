@@ -3,10 +3,10 @@
 Maker Media GmbH
 *** 
 
-# CO2-Ampel
+# CO<sub>2</sub>-Ampel
 Lüftungswarner mit dem IoT Octopus
 
-### Diese CO2-Ampel zeigt an, wann es im Klassenzimmer oder Büro Zeit zum Lüften ist.
+### Diese CO<sub>2</sub>-Ampel zeigt an, wann es im Klassenzimmer oder Büro Zeit zum Lüften ist.
 
 Unser Lüftungswarner arbeitet mit dem IoT Octopus oder alternativen, ESP8266-basierten Platinen wie dem Adafruit Feather Huzzah. Das Projekt unterstützt vielfältige Auswertungen, von einer bunten Neopixel-LED-Ampel über Trendanzeigen auf einer LED-Matrix bis hin zu IoT-Plattformen wie Thingspeak und Grafana.
 
