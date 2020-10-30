@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cb:CODEBLOCKS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://education.mit.edu/openblocks/ns http://education.mit.edu/openblocks/codeblocks.xsd" xmlns:cb="http://education.mit.edu/openblocks/ns">
+<Pages collapsible-pages="yes" drawer-with-page="yes">
+<Page page-color="128 128 128" page-drawer="Main" page-infullview="yes" page-name="Main" page-width="1920">
+<PageBlocks>
+<Block genus-name="delay" id="183">
+<Location>
+<X>336</X>
+<Y>316</Y>
+</Location>
+<BeforeBlockId>187</BeforeBlockId>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="184" connector-kind="socket" connector-type="number" init-type="number" label="Millisekunden" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="number" id="184">
+<Label>3000</Label>
+<Location>
+<X>480</X>
+<Y>319</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="183" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="variable_number" id="167">
+<Label>CO2</Label>
+<Location>
+<X>528</X>
+<Y>270</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="187" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="Feather7Seg" id="187">
+<Location>
+<X>336</X>
+<Y>267</Y>
+</Location>
+<BeforeBlockId>160</BeforeBlockId>
+<AfterBlockId>183</AfterBlockId>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="167" connector-kind="socket" connector-type="number" init-type="number" label="Ausgabe" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="GetSCD30" id="163">
+<Location>
+<X>548</X>
+<Y>205</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="160" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="single"/>
+</Plug>
+<Sockets num-sockets="1">
+<BlockConnector con-block-id="164" connector-kind="socket" connector-type="number" init-type="number" label="Sensor" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="SCD30VectorCO2" id="164">
+<Label>CO2</Label>
+<Location>
+<X>774</X>
+<Y>205</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="163" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="single"/>
+</Plug>
+</Block>
+<Block genus-name="setter_variable_number" id="160">
+<Location>
+<X>336</X>
+<Y>178</Y>
+</Location>
+<BeforeBlockId>159</BeforeBlockId>
+<AfterBlockId>187</AfterBlockId>
+<Sockets num-sockets="2">
+<BlockConnector con-block-id="161" connector-kind="socket" connector-type="number" init-type="number" label="Variable" position-type="single"/>
+<BlockConnector con-block-id="163" connector-kind="socket" connector-type="number" init-type="number" label="Wert" position-type="single"/>
+</Sockets>
+</Block>
+<Block genus-name="variable_number" id="161">
+<Label>CO2</Label>
+<Location>
+<X>548</X>
+<Y>181</Y>
+</Location>
+<Plug>
+<BlockConnector con-block-id="160" connector-kind="plug" connector-type="number" init-type="number" label="" position-type="mirror"/>
+</Plug>
+</Block>
+<Block genus-name="program" id="159">
+<Location>
+<X>188</X>
+<Y>135</Y>
+</Location>
+<Sockets num-sockets="2">
+<BlockConnector connector-kind="socket" connector-type="cmd" init-type="cmd" label="Setup" position-type="single"/>
+<BlockConnector con-block-id="160" connector-kind="socket" connector-type="cmd" init-type="cmd" label="Schleife" position-type="single"/>
+</Sockets>
+</Block>
+</PageBlocks>
+</Page>
+</Pages>
+</cb:CODEBLOCKS>
